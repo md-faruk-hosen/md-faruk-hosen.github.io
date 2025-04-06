@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Md. Faruk Hosen - Updates</title>
+    
+    <style>
+        /* Updates Section Styles */
+
+        .update-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .important-symbol,
+        .regular-update-symbol {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 20px;
+        }
+
+        .important-symbol::before {
+            content: '⭐️ Important Update';
+            color: red;
+            margin-right: 10px;
+        }
+
+        .regular-update-symbol::before {
+            content: '🔔 Regular Update';
+            color: #3498db;
+            margin-right: 10px;
+        }
+          .toggle-button {
+    display: none; /* Initially hide the toggle button */
+}
+
+           #navCheckbox {
+            display: none;
+        }
+
+        .toggle-button {
+            display: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .toggle-button {
+                display: block;
+                background: black;
+                color: white;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+                position: absolute;
+                top: 100px;
+                right: 2px;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            #navCheckbox:checked + nav ul {
+                display: block;
+            }
+
+            .toggle-button:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Md. Faruk Hosen</h1>
+          <label for="navCheckbox" class="toggle-button" onclick="">&#9776; Menu</label>
+        <input type="checkbox" id="navCheckbox">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="randp.html">Research and Publications</a></li>
+                <li><a href="profexp.html">Professional Experience</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="aff.html">Affiliations or Memberships</a></li>
+                <li><a href="updates.html">Updates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <h2>Updates</h2>
+
+        <div class="update-item">
+            <span class="important-symbol"></span>
+           <br>
+            <p>I am seeking for <strong>PhD opportunities </strong> in the fields of Data Science, Machine Learning, and Bioinformatics.</p>
+            <small>Published on: April 06, 2025</small>
+        </div>
+
+        <div class="update-item">
+            <span class="regular-update-symbol"></span>
+            <br>
+            <p>I am seeking partner(s) for research collaborations. Please reach out if you are interested. I would highly appreciate this great opportunity. Thank you.</p>
+            <small>Published on: April 06, 2025</small>
+        </div>
+
+        <!-- Add more update items as needed -->
+    </div>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+</body>
+</html>

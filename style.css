@@ -1,0 +1,183 @@
+
+ 
+    <style>
+        /* Add custom styles if needed */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+        }
+
+/* Your existing styles */
+
+body.home-page .profile-picture {
+    background-image: url('profile.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0px auto 0;
+    display: block;
+}
+
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: block;
+            text-align: center;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #666;
+        }
+
+      .main-content {
+    max-width: 800px;
+    margin: 0px auto 60px; /* Adjust margin to leave space for the footer */
+    padding: 10px;
+}
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 0px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+/* Add styles for the toggle button */
+.toggle-button {
+    display: none; /* Initially hide the toggle button */
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 600px) {
+    body.home-page .profile-picture {
+        /* Your existing styles for the profile picture in mobile view */
+       background-image: url('Mic pic.png');
+        background-size: cover;
+        background-position: center;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 0 auto 0;
+        display: block;
+    }
+
+    nav ul li {
+        /* Your existing styles for navigation links in mobile view */
+     display: block;
+        margin-bottom: 5px;
+    }
+
+    .mobile-container {
+        /* Your existing styles for the mobile container */
+     max-width: 480px;
+        margin: auto;
+        background-color: #555;
+        height: 500px;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .topnav {
+        /* Your existing styles for the top navigation in mobile view */
+      position: relative;
+     overflow: hidden;
+        background-color: #333;
+    }
+
+    .topnav #myLinks {
+        /* Your existing styles for the mobile navigation links */
+     display: none;
+     position: absolute;
+        top: 60px; /* Adjust the top position to fit your design */
+        right: 0;
+        background-color: #333;
+        z-index: 1;
+    }
+
+  .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+
+    .topnav a.icon {
+        /* Your existing styles for the toggle icon */
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav a:hover {
+        /* Your existing styles for hover effect in mobile view */
+      background-color: #ddd;
+        color: black;
+    }
+
+    .active {
+        /* Your existing styles for the active link in mobile view */
+     background-color: #04AA6D;
+        color: white;
+    }
+
+    footer {
+        position: static;
+    }
+
+    /* Display the toggle button in mobile view */
+    .toggle-button {
+        display: block;
+        background: black;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+     position: absolute;
+        top: 10px; /* Adjust the top position to fit your design */
+        right: 10px; /* Adjust the right position to fit your design */
+    }
+
+    /* Hide regular navigation links in mobile view */
+    nav ul {
+        display: none;
+    }
+
+    /* Show navigation links when the toggle button is clicked */
+    .nav-open nav ul {
+        display: block;
+    }
+
+
+}

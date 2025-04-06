@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Md. Faruk Hosen - Affiliations or Memberships</title>
+    
+    <style>
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+          .toggle-button {
+    display: none; /* Initially hide the toggle button */
+}
+
+           #navCheckbox {
+            display: none;
+        }
+
+        .toggle-button {
+            display: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .toggle-button {
+                display: block;
+                background: black;
+                color: white;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+                position: absolute;
+                top: 100px;
+                right: 2px;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            #navCheckbox:checked + nav ul {
+                display: block;
+            }
+
+            .toggle-button:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Md. Faruk Hosen</h1>
+          <label for="navCheckbox" class="toggle-button" onclick="">&#9776; Menu</label>
+        <input type="checkbox" id="navCheckbox">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="randp.html">Research and Publications</a></li>
+                <li><a href="profexp.html">Professional Experience</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="aff.html">Affiliations or Memberships</a></li>
+                <li><a href="updates.html">Updates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <h2>Affiliations or Memberships</h2>
+
+        <table>
+            <tr>
+                <th>Organization</th>
+                <th>Position</th>
+                <th>Duration</th>
+            </tr>
+            <tr>
+                <td>Society of ICT, MBSTU</td>
+                <td>Secretary</td>
+                <td>Working on it (2019)</td>
+            </tr>
+            <tr>
+                <td>IEEE Computer Society SB, MBSTU</td>
+                 <td>Chair</td>
+                <td>Working on it (2021)</td>
+            </tr>
+            <tr>
+                <td>IEEE Computer Society SB, MBSTU</td>
+                <td>Treasurer</td>
+                <td>Working on it (2020)</td>
+            </tr>
+            <!-- Add more rows for other affiliations or memberships -->
+        </table>
+    </div>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+</body>
+</html>
